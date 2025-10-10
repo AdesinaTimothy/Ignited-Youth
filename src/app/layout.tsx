@@ -1,6 +1,48 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Ubuntu } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
+
+const trap = localFont({
+  src: [
+    {
+      path: "./fonts/Trap-Light.otf",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Trap-Regular.otf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Trap-Medium.otf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Trap-SemiBold.otf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Trap-Bold.otf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Trap-ExtraBold.otf",
+      weight: "800",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Trap-Black.otf",
+      weight: "900",
+      style: "normal",
+    },
+  ],
+  variable: "--font-trap",
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,11 +65,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+    <html
+      lang="en"
+      className={`${trap.variable}  ${geistSans.variable} ${geistMono.variable}`}
+    >
+      <body className={`${trap.className} antialiased min-h-screen mx-auto`}>
+        <main>{children}</main>
       </body>
     </html>
   );
