@@ -11,7 +11,7 @@ function Faq() {
     <div className="">
       <div className="max-w-7xl mx-auto mt-1">
         <Accordion
-          className="border-1 border-purple-800 px-4 py-1 rounded-2xl mb-4"
+          className="border-1 border-[#1C21EB] px-4 py-1 rounded-2xl mb-4"
           type="single"
           collapsible
         >
@@ -44,7 +44,7 @@ function Faq() {
       </div>
       <div className="max-w-7xl mx-auto mt-1">
         <Accordion
-          className="border-1 border-purple-800 px-4 py-1 mb-4 rounded-2xl"
+          className="border-1 border-[#1C21EB] px-4 py-1 mb-4 rounded-2xl"
           type="single"
           collapsible
         >
@@ -67,7 +67,7 @@ function Faq() {
       </div>
       <div className="max-w-7xl mx-auto mt-1">
         <Accordion
-          className="border-1 border-purple-800 px-4 py-1 mb-4 rounded-2xl"
+          className="border-1 border-[#1C21EB] px-4 py-1 mb-4 rounded-2xl"
           type="single"
           collapsible
         >
@@ -90,7 +90,7 @@ function Faq() {
       </div>
       <div className="max-w-7xl mx-auto mt-1">
         <Accordion
-          className="border-1 border-purple-800 px-4 py-1 mb-4 rounded-2xl"
+          className="border-1 border-[#1C21EB] px-4 py-1 mb-4 rounded-2xl"
           type="single"
           collapsible
         >

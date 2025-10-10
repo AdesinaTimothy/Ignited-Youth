@@ -17,7 +17,7 @@ function Slider() {
           {Array.from({ length: 10 }).map((_, index) => (
             <CarouselItem key={index} className="flex-none w-75 pl-6">
               <UnitCard
-                image="/images/Football.png"
+                image="/images/football.webp"
                 title="Youth Worship Night"
               />
             </CarouselItem>

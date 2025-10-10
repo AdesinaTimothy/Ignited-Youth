@@ -35,8 +35,8 @@ export default function Home() {
         <section className="w-full py-30 bg-blue-50">
           <Container className="flex gap-6 flex-col lg:flex-row lg:gap-14 items-start justify-between">
             <div className="w-full gap-4  md:min-w-[400px] md:gap-8 md:basis-[30%] flex flex-col items-start">
-              <div className="px-4 py-3 border-2 border-purple-800 rounded-full max-w-[280px]">
-                <p className="text-[16px] text-purple-800">
+              <div className="px-4 py-3 border-2 border-[#1C21EB] rounded-full max-w-[280px]">
+                <p className="text-[16px] text-[#1C21EB]">
                   Answers to Your Questions
                 </p>
               </div>
