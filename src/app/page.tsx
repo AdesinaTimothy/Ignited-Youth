@@ -5,6 +5,8 @@ import ChurchFooter from "@/components/ChurchFooter";
 import Faq from "@/components/Faq";
 import Container from "@/components/Container";
 import Slider from "@/components/Slider";
+import UnitCard from "@/components/UnitCard";
+import UpcomingEvent from "@/components/UpcomingEvent";
 
 export default function Home() {
   return (
@@ -32,7 +34,40 @@ export default function Home() {
           </Container>
         </section>
 
-        <section className="w-full py-30 bg-blue-50">
+        <section className="w-full py-10 bg-black">
+          <Container className="flex flex-col gap-14">
+            <div className="flex flex-col gap-2 items-start md:items-center justify-start">
+              <h1 className="text-[30px] text-white md:text-[40px] font-bold">
+                Upcoming Programmes
+              </h1>
+              <p className="text-[16px] max-w-[700] text-white text-start md:text-center">
+                Stay updated with our upcoming programmes and events designed to
+                help you grow in faith, connect with others, and experience God
+                in new ways.
+              </p>
+            </div>
+
+            <div className="flex flex-col items-start md:flex-row md:items-center justify-between gap-6">
+              <UpcomingEvent
+                image="/images/event1.jpg"
+                title="Youth Worship Night"
+                description="Join us for the upcoming youth anniversary, it promises to be an inspiring and unforgettable experience 🔥💫!"
+              />
+              <UpcomingEvent
+                image="/images/event2.jpg"
+                title="Youth Worship Night"
+                description="Join us for the upcoming youth anniversary, it promises to be an inspiring and unforgettable experience 🔥💫!"
+              />
+              <UpcomingEvent
+                image="/images/event3.jpg"
+                title="Youth Worship Night"
+                description="Join us for the upcoming youth anniversary, it promises to be an inspiring and unforgettable experience 🔥💫!"
+              />
+            </div>
+          </Container>
+        </section>
+
+        <section className="w-full py-10 bg-blue-50">
           <Container className="flex gap-6 flex-col lg:flex-row lg:gap-14 items-start justify-between">
             <div className="w-full gap-4  md:min-w-[400px] md:gap-8 md:basis-[30%] flex flex-col items-start">
               <div className="px-4 py-3 border-2 border-[#1C21EB] rounded-full max-w-[280px]">
