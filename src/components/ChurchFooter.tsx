@@ -12,7 +12,7 @@ import {
 
 const ChurchFooter = () => {
   return (
-    <footer className="w-full bg-gradient-to-r text-white from-slate-900 via-purple-900 to-slate-900 shadow-lg text-footer-text px-4">
+    <footer className="w-full text-white bg-gradient-to-r from-[#1C21EB] via-[#2429F0] to-[#1C21EB] shadow-lg text-footer-text px-4">
       <div id="container" className="mx-auto max-w-7xl px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-10">
           {/* About Section */}

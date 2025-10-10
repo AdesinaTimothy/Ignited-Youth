@@ -17,12 +17,12 @@ function Faq() {
         >
           <AccordionItem value="item-1">
             <AccordionTrigger>
-              <p className="text-[22px] font-semibold">
+              <p className="text-[19px] font-semibold">
                 What time are your Sunday Services
               </p>
             </AccordionTrigger>
             <AccordionContent>
-              <p className="text-[16px]">
+              <p className="text-[19px]">
                 Our usual Sunday Service is usually as follow
               </p>
               <div className="flex flex-col gap-1 mt-2">
@@ -50,7 +50,7 @@ function Faq() {
         >
           <AccordionItem value="item-1">
             <AccordionTrigger>
-              <p className="text-[22px] font-semibold">
+              <p className="text-[19px] font-semibold">
                 I'm new to the faith and have questions
               </p>
             </AccordionTrigger>
@@ -73,7 +73,7 @@ function Faq() {
         >
           <AccordionItem value="item-1">
             <AccordionTrigger>
-              <p className="text-[22px] font-semibold">
+              <p className="text-[19px] font-semibold">
                 How can I find a community that fits me
               </p>
             </AccordionTrigger>
@@ -96,7 +96,7 @@ function Faq() {
         >
           <AccordionItem value="item-1">
             <AccordionTrigger>
-              <p className="text-[22px] font-semibold">
+              <p className="text-[19px] font-semibold">
                 What does Ignited Youth Believe?
               </p>
             </AccordionTrigger>

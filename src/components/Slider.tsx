@@ -17,16 +17,14 @@ function Slider() {
           {Array.from({ length: 10 }).map((_, index) => (
             <CarouselItem key={index} className="flex-none w-75 pl-6">
               <UnitCard
-                image="/images/event1.jpg"
+                image="/images/Football.png"
                 title="Youth Worship Night"
-                date="October 27, 2025"
-                description="Join us for a night of worship, inspiration, and connection with other young believers."
               />
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious className="absolute left-2 top-1/2 -translate-y-1/2 md:left-4 z-10" />
+        <CarouselNext className="absolute right-2 top-1/2 -translate-y-1/2 md:right-4 z-10" />
       </Carousel>
     </div>
   );

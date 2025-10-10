@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
   return (
     <>
       {/* Navbar */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 shadow-lg">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-[#1C21EB] via-[#2429F0] to-[#1C21EB] shadow-lg">
         <div id="container" className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             {/* Logo Section */}

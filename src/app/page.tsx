@@ -14,13 +14,13 @@ export default function Home() {
       </section>
 
       <main className="flex-grow">
-        <section className="w-full pt-30 pb-10 bg-red-50">
+        <section className="w-full pt-30 pb-10 bg-[#1C21EB]">
           <Container className="flex flex-col ">
             <div className="flex flex-col gap-2 items-start md:items-center justify-start">
-              <h1 className="text-[32px] md:text-[40px] font-bold">
-                INTEREST TEAMS
+              <h1 className="text-[30px] text-white md:text-[40px] font-bold">
+                INTEREST UNITS & <span className="text-yellow-500">GROUPS</span>
               </h1>
-              <p className="text-[18px] max-w-[700] text-start md:text-center">
+              <p className="text-[16px] max-w-[700] text-white text-start md:text-center">
                 Looking for opportunities to grow and serve God? We have
                 different group and units in the Ignited youth that you can join
               </p>
@@ -40,10 +40,10 @@ export default function Home() {
                   Answers to Your Questions
                 </p>
               </div>
-              <h2 className="text-[32px] md:text-[40px] font-bold text-gray-900 mb-1">
+              <h2 className="text-[30px] md:text-[40px] font-bold text-gray-900 mb-1">
                 Frequently <br /> Asked Questions
               </h2>
-              <p className="text-black text-[20px] max-w-[450]">
+              <p className="text-black text-[16px] max-w-[450]">
                 Everything you need to know about joining the Ignited Youth
                 Church/Community
               </p>
