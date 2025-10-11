@@ -7,6 +7,7 @@ import Container from "@/components/Container";
 import Slider from "@/components/Slider";
 import UnitCard from "@/components/UnitCard";
 import UpcomingEvent from "@/components/UpcomingEvent";
+import HeroSection from "@/components/Hero";
 
 export default function Home() {
   return (
@@ -16,6 +17,10 @@ export default function Home() {
       </section>
 
       <main className="flex-grow">
+        <section id="Hero-Section" className="w-full  pb-10 bg-[#1C21EB]">
+          <HeroSection />
+        </section>
+
         <section className="w-full pt-30 pb-10 bg-[#1C21EB]">
           <Container className="flex flex-col ">
             <div className="flex flex-col gap-2 items-start md:items-center justify-start">
