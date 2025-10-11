@@ -13,8 +13,8 @@ const Navbar: React.FC = () => {
   const navLinks: NavLink[] = [
     { label: "Home", href: "#home" },
     { label: "About", href: "#about" },
-    { label: "Give", href: "#give" },
     { label: "Programmes", href: "#events" },
+    { label: "Upper Room 🔥", href: "#events" },
   ];
 
   return (
@@ -42,7 +42,7 @@ const Navbar: React.FC = () => {
                   className="text-gray-200 hover:text-white font-medium text-lg relative group transition-colors duration-300"
                 >
                   {link.label}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-400 to-pink-600 group-hover:w-full transition-all duration-300"></span>
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300"></span>
                 </a>
               ))}
             </div>
@@ -50,7 +50,7 @@ const Navbar: React.FC = () => {
             {/* Hamburger Icon */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-white hover:text-purple-300 transition-colors duration-300 focus:outline-none z-50 relative"
+              className="text-white hover:text-white transition-colors duration-300 focus:outline-none z-50 relative"
               aria-label="Toggle menu"
             >
               {isOpen ? <X size={28} /> : <Menu size={28} />}
@@ -61,7 +61,7 @@ const Navbar: React.FC = () => {
 
       {/* Full Page Menu Overlay */}
       <div
-        className={`fixed inset-0 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 z-40 flex items-center justify-center transition-all duration-500 ${
+        className={`fixed inset-0 bg-gradient-to-r from-[#1C21EB] via-[#2429F0] to-[#1C21EB] shadow-lg z-40 flex items-center justify-center transition-all duration-500 ${
           isOpen ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
       >
@@ -71,7 +71,7 @@ const Navbar: React.FC = () => {
               key={link.label}
               href={link.href}
               onClick={() => setIsOpen(false)}
-              className={`text-white font-bold text-5xl md:text-6xl hover:text-purple-300 transition-all duration-300 hover:scale-110 ${
+              className={`text-white font-bold text-3xl md:text-6xl hover:text-purple-300 transition-all duration-300 hover:scale-110 ${
                 isOpen ? "animate-fade-in" : ""
               }`}
               style={{

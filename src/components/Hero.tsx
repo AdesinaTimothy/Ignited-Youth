@@ -14,20 +14,26 @@ export default function HeroSection() {
       />
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/65" />
+      <div className="absolute inset-0 bg-black/70" />
 
       {/* Content */}
       <div className="relative z-10 flex items-center justify-center h-full px-6">
         <div className="text-center max-w-3xl">
           {/* Heading */}
-          <h1 className="text-5xl md:text-7xl font-extrabold text-white mt-30 mb-6">
-            Welcome to Ignited Youth! We are glad to have you
+          <h1 className="text-4xl font-bold md:text-[65px] leading-tight md:font-extrabold text-white mt-5 mb-6">
+            Awakening Hearts and{" "}
+            <span className="text-yellow-500">Igniting Purpose</span>
+            💫
           </h1>
 
           {/* Subheading */}
-          <p className="text-lg md:text-xl text-gray-100 mb-8">
-            There is a place for you. Join us every Sunday at a Celebration
-            Church near you.
+          <p className="text-lg font-bold text-yellow-500 md:text-xl  mb-6">
+            WORSHIP || PRAYER || INTIMACY
+          </p>
+          {/* Subheading */}
+          <p className="text-md md:text-xl text-gray-100 mb-8">
+            Discover a place to belong, grow in your faith, and ignite your
+            purpose alongside a vibrant community of believers.
           </p>
         </div>
       </div>
