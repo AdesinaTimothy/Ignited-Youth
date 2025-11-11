@@ -17,7 +17,7 @@ const slides = [
 
 export default function AutoSlider() {
   return (
-    <div className="overflow-hidden w-full py-10">
+    <div className="overflow-hidden w-full pt-10">
       <motion.div
         className="flex gap-4"
         animate={{

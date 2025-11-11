@@ -1,16 +1,16 @@
 "use client";
 
-import Navbar from "@/components/NavBar";
-import ChurchFooter from "@/components/ChurchFooter";
-import Faq from "@/components/Faq";
-import Container from "@/components/Container";
-import Slider from "@/components/Slider";
-import UpcomingEvent from "@/components/UpcomingEvent";
-import HeroSection from "@/components/Hero";
-import AboutSection from "@/components/AboutSection";
 import AutoSlider from "@/components/AutoSlider";
+import ChurchFooter from "@/components/ChurchFooter";
+import Container from "@/components/Container";
+import Faq from "@/components/Faq";
+import HeroSection from "@/components/Hero";
+import Navbar from "@/components/NavBar";
+import UpcomingEvent from "@/components/UpcomingEvent";
+import UpperRoomVision from "@/components/UpperRoomVision";
+import React from "react";
 
-export default function Home() {
+function page() {
   return (
     <div className="w-full flex flex-col min-h-screen">
       <section id="menu-bar" className="flex-shrink-0">
@@ -19,53 +19,21 @@ export default function Home() {
 
       <main className="flex-grow">
         <section id="Hero-Section" className="w-full bg-[#1C21EB]">
-          // Example usage: //{" "}
           <HeroSection
             imageSrc="/images/hero.jpg"
             imageAlt="Church community background"
-            heading="Awakening Hearts and"
+            heading="THE UPPER ROOM"
             highlightedText="Igniting Purpose"
-            emoji="💫"
+            emoji="🔥"
             subheading="WORSHIP || PRAYER || INTIMACY"
-            description="Discover a place to belong, grow in your faith, and ignite your purpose alongside a vibrant community of believers."
-            overlayOpacity={60}
+            description="...an atmosphere of worship, prayer and fresh encounters"
+            overlayOpacity={70}
           />
         </section>
 
         <section className="w-full  py-10 bg-blue-50">
           <Container className="flex flex-col ">
-            <AboutSection
-              title="About Us"
-              description={`We are a vibrant youth community dedicated to helping young
-                individuals discover their purpose, grow in faith, and find a
-                supportive place to belong. We strive to empower the next generation
-                with values, love, and encouragement, guiding them to make a
-                meaningful impact in their communities. As the youth branch of
-                RCCG Jubilee Christian Centre, Wolverhampton, we are committed to
-                creating an environment where young people can thrive spiritually,
-                socially, and personally. Join us and become part of a growing
-                ßcommunity that celebrates faith, friendship, and purpose.`}
-              imageSrc="/images/about.jpg"
-              buttonText="Learn more"
-              buttonLink="/about"
-            />
-          </Container>
-        </section>
-        <section className="w-full pt-10  bg-[#1C21EB]">
-          <Container className="flex flex-col ">
-            <div className="flex flex-col gap-2 items-start md:items-center justify-start">
-              <h1 className="text-[30px] text-white md:text-[40px] font-bold">
-                INTEREST UNITS & <span className="text-yellow-500">GROUPS</span>
-              </h1>
-              <p className="text-[16px] max-w-[700] text-white text-start md:text-center">
-                Looking for opportunities to grow and serve God? We have
-                different group and units in the Ignited youth that you can join
-              </p>
-            </div>
-
-            <div className="mt-8">
-              <Slider />
-            </div>
+            <UpperRoomVision />
           </Container>
         </section>
 
@@ -84,12 +52,12 @@ export default function Home() {
 
             <div className="flex flex-col items-start md:flex-row md:items-center justify-between gap-6">
               <UpcomingEvent
-                image="/images/upper.jpeg"
+                image="/images/event1.jpg"
                 title="Youth Worship Night"
                 description="Join us for the upcoming youth anniversary, it promises to be an inspiring and unforgettable experience 🔥💫!"
               />
               <UpcomingEvent
-                image="/images/women.jpeg"
+                image="/images/event2.jpg"
                 title="Youth Worship Night"
                 description="Join us for the upcoming youth anniversary, it promises to be an inspiring and unforgettable experience 🔥💫!"
               />
@@ -136,3 +104,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default page;

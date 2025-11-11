@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 interface NavLink {
   label: string;
@@ -9,12 +10,12 @@ interface NavLink {
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   const navLinks: NavLink[] = [
-    { label: "Home", href: "#home" },
-    { label: "About", href: "#about" },
-    { label: "Programmes", href: "#events" },
-    { label: "Upper Room 🔥", href: "#events" },
+    { label: "Home", href: "/" },
+    { label: "About", href: "/about" },
+    { label: "Upper Room 🔥", href: "/upperroom" },
   ];
 
   return (
@@ -25,12 +26,7 @@ const Navbar: React.FC = () => {
           <div className="flex items-center justify-between">
             {/* Logo Section */}
             <div className="flex items-center space-x-2">
-              <Image
-                src="/logo.png" // just start from root /
-                alt="Logo"
-                width={200}
-                height={200}
-              />
+              <Image src="/logo.png" alt="Logo" width={200} height={200} />
             </div>
 
             {/* Menu Items - Center (Hidden on 768px and below) */}
@@ -39,10 +35,13 @@ const Navbar: React.FC = () => {
                 <a
                   key={link.label}
                   href={link.href}
-                  className="text-gray-200 hover:text-white font-medium text-lg relative group transition-colors duration-300"
+                  className={`text-lg font-medium relative transition-colors duration-300 ${
+                    pathname === link.href
+                      ? "text-white border-b-2 border-yellow-400"
+                      : "text-gray-200 hover:text-white hover:border-b-2 hover:border-yellow-400 hover:pb-1"
+                  }`}
                 >
                   {link.label}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300"></span>
                 </a>
               ))}
             </div>
