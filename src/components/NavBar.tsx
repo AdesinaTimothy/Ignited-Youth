@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import ComingSoonTag from "./ComingSoon";
 
 interface NavLink {
   label: string;
   href: string;
+  comingSoon: boolean;
 }
 
 const Navbar: React.FC = () => {
@@ -13,9 +15,14 @@ const Navbar: React.FC = () => {
   const pathname = usePathname();
 
   const navLinks: NavLink[] = [
-    { label: "Home", href: "/" },
-    { label: "About", href: "/about" },
-    { label: "Upper Room 🔥", href: "/upperroom" },
+    { label: "Home", href: "/", comingSoon: false },
+    { label: "About", href: "/about", comingSoon: false },
+    { label: "Upper Room 🔥", href: "/upperroom", comingSoon: false },
+    // {
+    //   label: "Ignite Conference 26 🔥",
+    //   href: "/igniteConference26",
+    //   comingSoon: true,
+    // },
   ];
 
   return (
@@ -78,6 +85,7 @@ const Navbar: React.FC = () => {
               }}
             >
               {link.label}
+              {link.comingSoon && <ComingSoonTag />}
             </a>
           ))}
         </div>

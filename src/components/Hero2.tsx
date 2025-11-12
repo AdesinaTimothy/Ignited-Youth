@@ -1,11 +1,15 @@
+import { sub } from "framer-motion/client";
 import Image from "next/image";
 
 interface HeroSectionProps {
   imageSrc: string;
   imageAlt?: string;
-  heading: string;
-  description: string;
+  heading?: string;
+  description?: string;
   overlayOpacity?: number;
+  highlightedText?: string;
+  emoji?: string;
+  subheading?: string;
 }
 
 export default function HeroSection({
@@ -13,10 +17,13 @@ export default function HeroSection({
   imageAlt = "Hero background",
   heading,
   description,
+  highlightedText,
+  emoji,
+  subheading,
   overlayOpacity = 70,
 }: HeroSectionProps) {
   return (
-    <div className="relative h-[400px] w-full">
+    <div className="relative h-[650px] w-full">
       {/* Optimized Background Image */}
       <Image
         src={imageSrc}
@@ -34,19 +41,26 @@ export default function HeroSection({
       />
 
       {/* Content - Left Aligned  */}
-      <div className="relative z-10 flex h-full items-center">
-        <div className="container max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
-          <div className="max-w-2xl">
-            {/* Heading */}
-            <h1 className="text-3xl mt-10 md:text-4xl font-bold text-white mb-6">
-              {heading}
-            </h1>
+      <div className=" relative z-10 flex items-center justify-center h-full px-6">
+        <div className="text-center max-w-3xl">
+          {/* Heading */}
+          <h1 className="text-4xl font-bold md:text-[65px] leading-tight md:font-extrabold text-white mt-5 mb-6">
+            {heading}{" "}
+            {highlightedText && (
+              <span className="text-yellow-500">{highlightedText}</span>
+            )}
+            {emoji && emoji}
+          </h1>
 
-            {/* Description */}
-            <p className="text-lg md:text-xl text-gray-200 leading-relaxed">
-              {description}
+          {/* Subheading */}
+          {subheading && (
+            <p className="text-lg font-bold text-yellow-500 md:text-xl mb-6">
+              {subheading}
             </p>
-          </div>
+          )}
+
+          {/* Description */}
+          <p className="text-md md:text-xl text-gray-100 mb-8">{description}</p>
         </div>
       </div>
     </div>

@@ -120,3 +120,19 @@
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes subtle-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.05);
+  }
+}
+
+.animate-pulse {
+  animation: subtle-pulse 1.8s ease-in-out infinite;
+}
+

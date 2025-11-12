@@ -5,14 +5,13 @@ import Image from "next/image";
 const slides = [
   "/images/roll1.jpg",
   "/images/roll2.jpg",
-  "/images/roll3.jpg",
+
   "/images/roll4.jpg",
   "/images/roll5.jpg",
   "/images/roll6.jpg",
   "/images/roll7.jpg",
   "/images/roll8.jpg",
   "/images/roll11.jpg",
-  "/images/roll10.jpg",
 ];
 
 export default function AutoSlider() {
