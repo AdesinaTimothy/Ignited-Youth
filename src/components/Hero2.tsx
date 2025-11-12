@@ -11,6 +11,7 @@ interface HeroSectionProps {
   highlightedText?: string;
   emoji?: string;
   subheading?: string;
+  heightClass?: string;
 }
 
 export default function HeroSection({
@@ -22,6 +23,7 @@ export default function HeroSection({
   emoji,
   subheading,
   overlayOpacity = 70,
+  heightClass = "h-[400px]",
 }: HeroSectionProps) {
   return (
     <div className="relative h-[400px] w-full">

@@ -12,7 +12,7 @@ export default function page() {
         <Navbar />
       </section>
 
-      <main className=" mt-20 flex-grow">
+      <main className="mt-18 flex-grow">
         <section id="Hero-Section" className="w-full h-auto bg-[#1C21EB] ">
           <Hero2
             heading="Ignite Conference 2026"
@@ -20,6 +20,7 @@ export default function page() {
             description=" Welcome to the dedicated page for the Ignite Conference 2026! Stay tuned here for more information.
             ."
             overlayOpacity={70}
+            heightClass="h-screen"
           />
         </section>
       </main>
