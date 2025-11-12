@@ -1,5 +1,6 @@
 import { sub } from "framer-motion/client";
 import Image from "next/image";
+import Container from "./Container";
 
 interface HeroSectionProps {
   imageSrc: string;
@@ -23,7 +24,7 @@ export default function HeroSection({
   overlayOpacity = 70,
 }: HeroSectionProps) {
   return (
-    <div className="relative h-[650px] w-full">
+    <div className="relative h-[400px] w-full">
       {/* Optimized Background Image */}
       <Image
         src={imageSrc}
@@ -41,27 +42,33 @@ export default function HeroSection({
       />
 
       {/* Content - Left Aligned  */}
-      <div className=" relative z-10 flex items-center justify-center h-full px-6">
-        <div className="text-center max-w-3xl">
-          {/* Heading */}
-          <h1 className="text-4xl font-bold md:text-[65px] leading-tight md:font-extrabold text-white mt-5 mb-6">
-            {heading}{" "}
-            {highlightedText && (
-              <span className="text-yellow-500">{highlightedText}</span>
-            )}
-            {emoji && emoji}
-          </h1>
+      <div className=" relative z-10 flex items-center justify-start h-full">
+        <Container className=" w-full">
+          <div className="flex justify-start">
+            <div className="text-left max-w-3xl">
+              {/* Heading */}
+              <h1 className="text-4xl font-bold md:text-[65px] leading-tight md:font-extrabold text-white mt-8 mb-4">
+                {heading}{" "}
+                {highlightedText && (
+                  <span className="text-yellow-500">{highlightedText}</span>
+                )}
+                {emoji && emoji}
+              </h1>
 
-          {/* Subheading */}
-          {subheading && (
-            <p className="text-lg font-bold text-yellow-500 md:text-xl mb-6">
-              {subheading}
-            </p>
-          )}
+              {/* Subheading */}
+              {subheading && (
+                <p className="text-lg font-bold text-yellow-500 md:text-xl mb-6">
+                  {subheading}
+                </p>
+              )}
 
-          {/* Description */}
-          <p className="text-md md:text-xl text-gray-100 mb-8">{description}</p>
-        </div>
+              {/* Description */}
+              <p className="text-md md:text-xl text-gray-100 mb-8">
+                {description}
+              </p>
+            </div>
+          </div>
+        </Container>
       </div>
     </div>
   );

@@ -15,10 +15,7 @@ function Slider() {
       <Carousel>
         <CarouselContent>
           <CarouselItem className="flex-none w-75 pl-6">
-            <UnitCard
-              image="/images/football.webp"
-              title="Youth Worship Night"
-            />
+            <UnitCard image="/images/book.webp" title="Youth Worship Night" />
           </CarouselItem>
           <CarouselItem className="flex-none w-75 pl-6">
             <UnitCard
@@ -27,10 +24,7 @@ function Slider() {
             />
           </CarouselItem>
           <CarouselItem className="flex-none w-75 pl-6">
-            <UnitCard
-              image="/images/football.webp"
-              title="Youth Worship Night"
-            />
+            <UnitCard image="/images/prayer.webp" title="Youth Worship Night" />
           </CarouselItem>
           <CarouselItem className="flex-none w-75 pl-6">
             <UnitCard

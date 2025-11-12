@@ -16,13 +16,13 @@ const Navbar: React.FC = () => {
 
   const navLinks: NavLink[] = [
     { label: "Home", href: "/", comingSoon: false },
-    { label: "About", href: "/about", comingSoon: false },
+    { label: "About Us", href: "/about", comingSoon: false },
     { label: "Upper Room 🔥", href: "/upperroom", comingSoon: false },
-    // {
-    //   label: "Ignite Conference 26 🔥",
-    //   href: "/igniteConference26",
-    //   comingSoon: true,
-    // },
+    {
+      label: "Ignite Conf'26 💡",
+      href: "/igniteConference26",
+      comingSoon: true,
+    },
   ];
 
   return (
@@ -42,7 +42,7 @@ const Navbar: React.FC = () => {
                 <a
                   key={link.label}
                   href={link.href}
-                  className={`text-lg font-medium relative transition-colors duration-300 ${
+                  className={`text-md font-medium relative transition-colors duration-300 ${
                     pathname === link.href
                       ? "text-white border-b-2 border-yellow-400"
                       : "text-gray-200 hover:text-white hover:border-b-2 hover:border-yellow-400 hover:pb-1"

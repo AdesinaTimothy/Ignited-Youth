@@ -9,6 +9,7 @@ import UpcomingEvent from "@/components/UpcomingEvent";
 import HeroSection from "@/components/Hero";
 import AboutSection from "@/components/AboutSection";
 import AutoSlider from "@/components/AutoSlider";
+import BlogSection from "@/components/BlogSection";
 
 export default function Home() {
   return (
@@ -19,16 +20,15 @@ export default function Home() {
 
       <main className="flex-grow">
         <section id="Hero-Section" className="w-full bg-[#1C21EB]">
-          // Example usage: //{" "}
           <HeroSection
-            imageSrc="/images/hero.jpg"
+            imageSrc="/images/heronew.jpg"
             imageAlt="Church community background"
             heading="Awakening Hearts and"
             highlightedText="Igniting Purpose"
             emoji="💫"
-            subheading="WORSHIP || PRAYER || INTIMACY"
+            // subheading="WORSHIP || PRAYER || INTIMACY"
             description="Discover a place to belong, grow in your faith, and ignite your purpose alongside a vibrant community of believers."
-            overlayOpacity={60}
+            overlayOpacity={75}
           />
         </section>
 
@@ -40,18 +40,18 @@ export default function Home() {
                 individuals discover their purpose, grow in faith, and find a
                 supportive place to belong. We strive to empower the next generation
                 with values, love, and encouragement, guiding them to make a
-                meaningful impact in their communities. As the youth branch of
+                meaningful impact in their communities. As the youth branch of 
                 RCCG Jubilee Christian Centre, Wolverhampton, we are committed to
                 creating an environment where young people can thrive spiritually,
                 socially, and personally. Join us and become part of a growing
-                ßcommunity that celebrates faith, friendship, and purpose.`}
+                community that celebrates faith, friendship, and purpose.`}
               imageSrc="/images/about.jpg"
               buttonText="Learn more"
               buttonLink="/about"
             />
           </Container>
         </section>
-        <section className="w-full pt-10  bg-[#1C21EB]">
+        <section className="w-full pt-10 pb-10  bg-[#1C21EB]">
           <Container className="flex flex-col ">
             <div className="flex flex-col gap-2 items-start md:items-center justify-start">
               <h1 className="text-[30px] text-white md:text-[40px] font-bold">
@@ -104,6 +104,11 @@ export default function Home() {
 
         <section className="w-full py-10 bg-blue-50">
           <Container className="flex gap-6 flex-col lg:flex-row lg:gap-14 items-start justify-between">
+            <BlogSection />
+          </Container>
+        </section>
+        <section className="w-full py-10 ">
+          <Container className="flex gap-6 flex-col lg:flex-row lg:gap-14 items-start justify-between">
             <div className="w-full gap-4  md:min-w-[400px] md:gap-8 md:basis-[30%] flex flex-col items-start">
               <div className="px-4 py-3 border-2 border-[#1C21EB] rounded-full max-w-[280px]">
                 <p className="text-[16px] text-[#1C21EB]">
@@ -115,7 +120,7 @@ export default function Home() {
               </h2>
               <p className="text-black text-[16px] max-w-[450]">
                 Everything you need to know about joining the Ignited Youth
-                Church/Community
+                Church
               </p>
             </div>
 

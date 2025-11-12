@@ -51,15 +51,15 @@ function Faq() {
           <AccordionItem value="item-1">
             <AccordionTrigger>
               <p className="text-[19px] font-semibold">
-                I'm new to the faith and have questions
+                Who can join Ignited Youth?
               </p>
             </AccordionTrigger>
             <AccordionContent>
               <p className="text-[16px]">
-                Absolutely!. We're a mission-minded community passionate about
-                walking people on their faith joirney. Reach out to us via the
-                visit us page and someone from our tream will be glad to connect
-                with you.
+                Everyone is welcome! Whether you’re new to faith, exploring
+                spirituality, or already a follower of Christ, Ignited Youth is
+                open to all young people who want to grow, learn, and connect in
+                a supportive community.
               </p>
             </AccordionContent>
           </AccordionItem>
@@ -74,15 +74,15 @@ function Faq() {
           <AccordionItem value="item-1">
             <AccordionTrigger>
               <p className="text-[19px] font-semibold">
-                How can I find a community that fits me
+                How can I get involved with Ignited Youth
               </p>
             </AccordionTrigger>
             <AccordionContent>
               <p className="text-[16px]">
-                Whether you're a teenager, married, single, or over 30, there's
-                a place for you here! We have vibrant communities for different
-                life stages and interests. Head over to our Communuties Page to
-                explore and get plugged in.
+                You can get involved by attending our events, volunteering for
+                youth programs, or joining small groups and ministries. Reach
+                out via our contact page or social media, and we’ll guide you on
+                how to participate actively.
               </p>
             </AccordionContent>
           </AccordionItem>

@@ -5,7 +5,7 @@ import ChurchFooter from "@/components/ChurchFooter";
 import Container from "@/components/Container";
 import Countdown from "@/components/Countdown";
 
-import HeroSection from "@/components/Hero2";
+import HeroSection from "@/components/Hero";
 import Navbar from "@/components/NavBar";
 import TestimonyCarousel from "@/components/TestimonyCarousel";
 import UpcomingEvent from "@/components/UpcomingEvent";
@@ -44,7 +44,7 @@ function page() {
       </section>
 
       <main className="flex-grow">
-        <section id="Hero-Section" className="w-full bg-[#1C21EB]">
+        <section id="Hero-Section" className="w-full  bg-[#1C21EB]">
           <HeroSection
             imageSrc="/images/hero.jpg"
             imageAlt="Church community background"

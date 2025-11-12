@@ -39,7 +39,7 @@ function UpperFaq() {
           <AccordionItem value="item-1">
             <AccordionTrigger>
               <p className="text-[19px] font-semibold">
-                Is there any DressCode for UpperRoom meeting
+                Is there any Dress Code for UpperRoom meeting
               </p>
             </AccordionTrigger>
             <AccordionContent>

@@ -100,12 +100,12 @@ function page() {
           <Container className="flex flex-col ">
             <div className="flex flex-col gap-2 items-start md:items-center justify-start">
               <h1 className="text-[30px] text-white md:text-[40px] font-bold">
-                Meet the Servant-Leaders
+                Meet the Ignite Team
               </h1>
               <p className="text-[16px] max-w-[700] text-white text-start md:text-center">
-                Discover the devoted leaders of JCC Wolverhampton, committed to
-                faith and service. Here to guide, inspire, and empower through
-                your journey of growth and spirituality.
+                Get to know the vibrant leaders of JCC Ignited Youths,
+                passionate about faith, purpose, and empowering the next
+                generation to live boldly for Christ.
               </p>
             </div>
 
