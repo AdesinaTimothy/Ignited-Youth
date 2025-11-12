@@ -82,17 +82,13 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="flex flex-col items-start md:flex-row md:items-center justify-between gap-6">
+            <div className="flex flex-col items-start md:flex-row md:items-center justify-center gap-20">
               <UpcomingEvent
                 image="/images/upper.jpeg"
                 title="Youth Worship Night"
                 description="Join us for the upcoming youth anniversary, it promises to be an inspiring and unforgettable experience 🔥💫!"
               />
-              <UpcomingEvent
-                image="/images/women.jpeg"
-                title="Youth Worship Night"
-                description="Join us for the upcoming youth anniversary, it promises to be an inspiring and unforgettable experience 🔥💫!"
-              />
+
               <UpcomingEvent
                 image="/images/event3.jpg"
                 title="Youth Worship Night"

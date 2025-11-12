@@ -101,7 +101,7 @@ export default function BlogSection() {
               View All Articles
             </button>
           </Link>
-          <p className="text-gray-600 md:text-lg text-md max-w-[100px]">
+          <p className="text-gray-600 md:text-lg text-md ">
             Explore all the available resources, articles, and teachings to stay
             inspired and grow in faith.
           </p>
